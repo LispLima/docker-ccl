@@ -3,7 +3,7 @@
 set -eo pipefail
 
 if [ ! -d /usr/local/src/ccl ]; then
-  wget ftp://ftp.clozure.com/pub/release/1.9/ccl-1.9-linuxx86.tar.gz -O - | tar -xvz
+  wget ftp://ftp.clozure.com/pub/release/1.10/ccl-1.10-linuxx86.tar.gz -O - | tar -xvz
   find ccl -name .svn -print0 | xargs -0 rm -rf
 
   # XXX: /usr/local/src is the default "CCL_DEFAULT_DIRECTORY"
